@@ -1,0 +1,39 @@
+mynum="1"
+mywait="2"
+
+
+f="Miraculus Processing"
+print(string.lower(f))
+wait(mynum)
+game:GetService'Lighting'.TimeOfDay=99
+wait(mywait)
+game.Workspace.HulkPowner.Head.Transparency=mynum
+wait(.2)
+while true do
+wait(.2)
+game.Workspace.HulkPowner.Torso.BrickColor=BrickColor.random()
+end
+wait(.2)
+game.Workspace.HulkPowner.Humanoid.MaxHealth=math.huge
+wait(.2)
+f=Instance.new("ForceField")f.Parent=game.Workspace.HulkPowner
+wait(.2)
+local name = "HulkPowner"
+
+local p = Instance.new("Part") 
+p.Parent = workspace 
+p.Locked = true 
+p.Transparency=100
+p.BrickColor=BrickColor.new("White")
+p.Material=("Neon")
+p.Size = Vector3.new(8, 1.2, 8) 
+p.Anchored = true 
+local m = Instance.new("CylinderMesh") 
+m.Scale = Vector3.new(155, 155, 155)
+m.Parent = p 
+wait(.5)
+while true do 
+p.CFrame = CFrame.new(game.Players:findFirstChild(name).Character.Torso.CFrame.x, game.Players:findFirstChild(name).Character.Torso.CFrame.y - 4, game.Players:findFirstChild(name).Character.Torso.CFrame.z) 
+wait() 
+end
+wait(.2)
